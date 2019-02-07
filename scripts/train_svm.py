@@ -54,10 +54,10 @@ if __name__ == '__main__':
 
     class_weight = dict()
 
-    class_weight[1] = 500
+    class_weight[1] = 100
     class_weight[0] = 1
 
-    clf = SVC(kernel = 'rbf', gamma = 10, class_weight = class_weight, C = 0.1)
+    clf = SVC(kernel = 'rbf', gamma = 10, class_weight = class_weight, C = 1)
     # clf = SVC(kernel = 'poly', degree = 5, class_weight = class_weight)
     # clf = DecisionTreeClassifier(random_state=0)
     # clf = OneClassSVM(kernel = 'rbf')
